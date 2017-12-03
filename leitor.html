@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+body {
+  margin: auto;
+  background: #eaeaea;  
+  font-family: 'Open Sans', sans-serif;
+}
+
+.info p {
+  text-align:center;
+  color: #999;
+  text-transform:none;
+  font-weight:600;
+  font-size:15px;
+  margin-top:2px
+}
+
+.info i {
+  color:#F6AA93;
+}
+form h1 {
+  font-size: 18px;
+  background: #F6AA93 none repeat scroll 0% 0%;
+  color: rgb(255, 255, 255);
+  padding: 15px 15px;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  text-shadow: none; 
+  text-align:left
+}
+
+form {
+  border-radius: 5px;
+  max-width:700px;
+  width:100%;
+  margin: 5% auto;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+p span {
+  color: #F00;
+}
+
+p {
+  margin: 0px;
+  font-weight: 500;
+  line-height: 2;
+  color:#333;
+}
+
+h1 {
+  text-align:center; 
+  color: #666;
+  text-shadow: 1px 1px 0px #FFF;
+  margin:50px 0px 0px 0px
+}
+
+input {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  width: 75%;
+  height: 40px;
+  float: left;
+  padding: 0px 15px;
+}
+
+a {
+  text-decoration:inherit
+}
+
+textarea {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #EEE;
+  margin: 0;
+  width: 75%;
+  height: 130px; 
+  float: left;
+  padding: 0px 15px;
+}
+
+.form-group {
+  overflow: hidden;
+  clear: both;
+}
+
+.icon-case {
+  width: 35px;
+  float: left;
+  border-radius: 5px 0px 0px 5px;
+  background:#eeeeee;
+  height:42px;
+  position: relative;
+  text-align: center;
+  line-height:40px;
+}
+
+i {
+  color:#555;
+}
+
+.contentform {
+  padding: 40px 30px;
+}
+
+.bouton-contact{
+  background-color: #81BDA4;
+  color: #FFF;
+  text-align: center;
+  width: 100%;
+  border:0;
+  padding: 17px 25px;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.leftcontact {
+  width:49.5%; 
+  float:left;
+  border-right: 1px dotted #CCC;
+  box-sizing: border-box;
+  padding: 0px 15px 0px 0px;
+}
+
+.rightcontact {
+  width:49.5%;
+  float:right;
+  box-sizing: border-box;
+  padding: 0px 0px 0px 15px;
+}
+
+.validation {
+  display:none;
+  margin: 0 0 10px;
+  font-weight:400;
+  font-size:13px;
+  color: #DE5959;
+}
+
+#sendmessage {
+  border:1px solid #fff;
+  display:none;
+  text-align:center;
+  margin:10px 0;
+  font-weight:600;
+  margin-bottom:30px;
+  background-color: #EBF6E0;
+  color: #5F9025;
+  border: 1px solid #B3DC82;
+  padding: 13px 40px 13px 18px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
+}
+
+#sendmessage.show,.show  {
+  display:block;
+}
+</style>
+<body class="w3-light-grey">
+
+  <header id="header">
+        <h1><a href="sessoes.html">SDCA - IFB</a></h1>
+        <nav id="nav">
+        </nav>
+      </header>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="usuario.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Carlos Alberto</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Professor</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Águas Claras - DF</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>carlosalb@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+55 61 9 9999-9999</p>
+          <hr>
+        </div>
+      </div>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+  
+  <form>
+      <h1>Dados Pessoais</h1>
+      
+    <div class="contentform">
+      <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+
+
+      <div class="leftcontact">
+          
+
+            <div class="form-group">
+            <p>Nome <span>*</span></p>
+            <span class="icon-case"><i class="fa fa-user"></i></span>
+        <input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+                <div class="validation"></div>
+      </div>  
+
+      <div class="form-group">
+      <p>Placa <span>*</span></p>
+      <span class="icon-case"><i class="fa fa-car"></i></span>
+        <input type="text" name="society" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
+                <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+      <p>Modelo <span>*</span></p>
+      <span class="icon-case"><i class="fa fa-car"></i></span>
+        <input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                <div class="validation"></div>
+      </div> 
+
+  </div>
+
+  <div class="rightcontact">
+
+
+      <div class="form-group">
+      <p>Função <span>*</span></p>
+      <span class="icon-case"><i class="fa fa-info"></i></span>
+                <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
+                <div class="validation"></div>
+      </div>
+    
+  
+  </div>
+  </div>
+<button type="submit" class="bouton-contact">Liberar</button>
+  
+</form> 
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>SDCA - IFB</p>
+</footer>
+
+</body>
+</html>
